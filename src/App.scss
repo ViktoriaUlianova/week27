@@ -1,0 +1,133 @@
+$gray: #777878;
+$white: #fff;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+
+.card {
+  border: $gray 2px solid;
+  margin: .5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // width: 15%;
+  border: $white solid 2px;
+  // padding: 1%;
+}
+
+.card-header{
+  display: flex;
+  // background-color: ;
+  padding: 7%;
+  font-size: 20px;
+  color: $white;
+  justify-content: center;
+}
+
+.card-section1-price {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  padding: 11%;
+  font-size: 2vw;
+}
+
+.card-section2 {
+  // background-color: ;
+  display: flex;
+  justify-content: center;
+  color: $gray;
+  padding: 5%;
+}
+
+.card-footer {
+  display: flex;
+  // justify-content: center;
+  color: $gray;
+  background-color: rgba(238,238,238,255);
+  padding: 3%;
+  text-align: center;
+}
+
+.card-list .card:nth-child(1) .card-header {
+  background-color: #219cab;
+
+}
+
+.card-list .card:nth-child(1) .card-section1 {
+  background-color: #2cc1d5;
+
+}
+
+.card-list .card:nth-child(2) .card-header {
+  background-color: #1f8972;
+
+}
+
+.card-list .card:nth-child(2) .card-section1 {
+  background-color: #24ae8d;
+
+}
+
+.card-list .card:nth-child(3) .card-header {
+  background-color: #c4554e;
+}
+
+.card-list .card:nth-child(3) .card-section1 {
+  background-color: #f46a5f;
+}
+
+.card-list .card:nth-child(4) .card-header {
+  background-color: #282f37;
+}
+
+.card-list .card:nth-child(4) .card-section1 {
+  background-color: #333a44;
+}
+
+.selected {
+  height: 25%;
+  width: 25%;
+}

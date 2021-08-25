@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from './Card'
 
-
 const cards = [
     {
         nameRate: "300",
@@ -17,6 +16,7 @@ const cards = [
         nameRate: "550",
         priceRate: "550",
         speedRate: "100",
+        isSelected: true,
     },
     {
         nameRate: "1000",
@@ -27,12 +27,13 @@ const cards = [
 
 function CardList() {
     return (
-        <div>
+        <div className="card-list"> 
             {cards.map((card) => (
                 <Card
                 nameRate={card.nameRate}
                 priceRate={card.priceRate}
                 speedRate={card.speedRate}
+                isSelected={card.isSelected}
                 />
 
             ))}

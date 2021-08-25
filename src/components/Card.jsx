@@ -3,12 +3,13 @@ import React from 'react'
 
 
 function Card(props) {
-    const { nameRate, priceRate, speedRate } = props;
+    const { nameRate, priceRate, speedRate, isSelected } = props;
     return (
-        <div className="card">
+        <div className={`card ${isSelected?'selected':''}`}>
             <div className="card-header">
+                Безлимитный {nameRate}
                 <div className="card-header-name">
-                    Безлимитный {nameRate}
+                    
                     </div>
             </div>
             <div className="card-section1">
