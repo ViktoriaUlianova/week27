@@ -16,7 +16,6 @@ const cards = [
         nameRate: "550",
         priceRate: "550",
         speedRate: "100",
-        isSelected: true,
     },
     {
         nameRate: "1000",
@@ -33,7 +32,7 @@ function CardList() {
                 nameRate={card.nameRate}
                 priceRate={card.priceRate}
                 speedRate={card.speedRate}
-                isSelected={card.isSelected}
+                
                 />
 
             ))}
